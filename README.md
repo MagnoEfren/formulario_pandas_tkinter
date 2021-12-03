@@ -1,7 +1,8 @@
-# formulario_pandas_tkinter
-save data in excel from a gui in tkinter
+## GUI en Python usando Pandas y Tkinter
 
-### Cronometro en Python usando Tkinter - GUI
-![2](https://github.com/MagnoEfren/gui_python_tkinter/blob/main/Cronometro/cronometro-en-python.png) 
-<a href="https://youtu.be/26D17QgpIBE" target="_blank">
-<img src="https://img.shields.io/badge/YouTube-2200FF?style=for-the-badge&logo=youtube&logoColor=black" target="_blank"> 
+<div align="center">
+  
+### Formulario de Registro en Python usando Pandas y Tkinter
+![1](https://github.com/MagnoEfren/formulario_pandas_tkinter/blob/main/pandas_tkinter.png) 
+<a href="https://youtu.be/zbm8iq22oG0" target="_blank">
+<img src="https://img.shields.io/badge/YouTube-22FF11?style=for-the-badge&logo=youtube&logoColor=black" target="_blank"> 
