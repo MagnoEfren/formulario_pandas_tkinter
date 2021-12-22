@@ -10,8 +10,6 @@ ventana.config(bg='black')
 ventana.geometry('560x388')
 ventana.resizable(0,0)
 ventana.title('Guardar datos en Excel')
-
-
 nombre1,apellido1,edad1,correo1,telefono1 = [],[],[],[],[]
 
 def agregar_datos():
@@ -29,22 +27,18 @@ def agregar_datos():
 	ingresa_correo.delete(0,END)
 	ingresa_telefono.delete(0,END)
 
-
 def guardar_datos():	
 	global nombre1,apellido1,edad1,correo1,telefono1
-
 	datos = {'Nombres':nombre1,'Apellidos':apellido1, 'Edad':edad1, 'Correo':correo1, 'Telefono':telefono1 } 
 	nom_excel  = str(nombre_archivo.get() + ".xlsx")	
 	df = pd.DataFrame(datos,columns =  ['Nombres', 'Apellidos', 'Edad', 'Correo', 'Telefono']) 
 	df.to_excel(nom_excel)
 	nombre_archivo.delete(0,END)
 
-
 frame1 = Frame(ventana, bg='gray15')
 frame1.grid(column=0, row=0, sticky='nsew')
 frame2 = Frame(ventana, bg='gray16')
 frame2.grid(column=1, row=0, sticky='nsew')
-
 
 nombre = Label(frame1, text ='Nombre', width=10).grid(column=0, row=0, pady=20, padx= 10)
 ingresa_nombre = Entry(frame1,  width=20, font = ('Arial',12))
@@ -65,7 +59,6 @@ ingresa_correo.grid(column=1, row=3)
 telefono = Label(frame1, text ='Telefono', width=10).grid(column=0, row=4, pady=20, padx= 10)
 ingresa_telefono = Entry(frame1, width=20, font = ('Arial',12))
 ingresa_telefono.grid(column=1, row=4)
-
 
 agregar = Button(frame1, width=20, font = ('Arial',12, 'bold'), text='Agregar', bg='orange',bd=5, command =agregar_datos)
 agregar.grid(columnspan=2, row=5, pady=20, padx= 10)
