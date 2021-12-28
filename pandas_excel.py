@@ -71,7 +71,6 @@ nombre_archivo.grid(column=0, row=1, pady=1, padx= 10)
 
 guardar = Button(frame2, width=20, font = ('Arial',12, 'bold'), text='Guardar', bg='green2',bd=5, command =guardar_datos)
 guardar.grid(column=0, row=2, pady=20, padx= 10)
-
 ventana.mainloop()
 
 
